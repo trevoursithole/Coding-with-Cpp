@@ -1,0 +1,35 @@
+//c++ project about inheritance _mainly focusing on public and protected classes
+
+#include <iostream>
+#include <string>
+
+Class vehicles{
+  public:
+void settype(string tp){
+type=tp;
+}
+void setcolor(string clr){
+color=clr
+}
+void setrental_price(int rp){
+rental_price=rp;
+}
+protected:
+ string type;
+ string color;
+ int rental_price;
+
+};
+
+//derived class
+
+class Cars:public vehicles{
+public : 
+     string getCar(){
+return(type);
+     }
+     string getColor(){
+ return(color);
+     }
+
+}
